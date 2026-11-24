@@ -107,7 +107,7 @@ first. Security remediation and release verification are tracked in
 | infoblox.enabled | bool | `false` | infoblox provider enabled |
 | infoblox.gridHost | string | `"10.0.0.1"` | WAPI address |
 | infoblox.httpPoolConnections | int | `10` | Size of connections pool |
-| infoblox.httpRequestTimeout | int | `20` | Request Timeout in seconds |
+| infoblox.httpRequestTimeout | int | `20` | Request Timeout in secconds |
 | infoblox.sslVerify | bool | `true` | use SSL |
 | infoblox.wapiPort | int | `443` | WAPI port |
 | infoblox.wapiVersion | string | `"2.3.1"` | WAPI version |
@@ -154,4 +154,4 @@ first. Security remediation and release verification are tracked in
 | tracing.samplingRatio | string | `nil` | float representing the ratio of how often the span should be kept/dropped (env var `TRACING_SAMPLING_RATIO`) if not specified, the AlwaysSample will be used which is the same as 1.0. `0.1` would mean that 10% of samples will be kept |
 | tracing.sidecarImage.pullPolicy | string | `"Always"` |  |
 | tracing.sidecarImage.repository | string | `"otel/opentelemetry-collector"` | OpenTelemetry collector into which the k8gb operator sends the spans. It can be further configured to send its data to somewhere else using exporters (Jaeger for instance) |
-| tracing.sidecarImage.tag | string | `"0.164.0"` |  |
+| tracing.sidecarImage.tag | string | `"0.165.0"` |  |
